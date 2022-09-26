@@ -1,13 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "AeroSans";
+  src: url("../src/assests/fonts/AeroSans.ttf");
+}
+
+@font-face {
+  font-family: "Hess";
+  src: url("../src/assests/fonts/Hess-Gothic-Round-NF-W01-Bold.ttf");
+}
+@font-face {
+  font-family: "Mark-Pro";
+  src: url("../src/assests/fonts/Mark-Pro.ttf");
+}
+@font-face {
+  font-family: "Din";
+  src: url("../src/assests/fonts/D-DIN.otf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.primaryText {
+  color: #fbb279;
+  background-image: -webkit-linear-gradient(0deg, #fbb279 0%, #27f2bc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.subText {
+  color: #e39ef1;
+  background-image: -webkit-linear-gradient(0deg, #e39ef1 0%, #b4ff24 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
