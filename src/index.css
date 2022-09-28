@@ -50,3 +50,21 @@ code {
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
+.title {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.title.selected {
+  font-size: 16px;
+}
+.underline {
+  width: 50%;
+  height: 5px;
+  border-radius: 4px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+}

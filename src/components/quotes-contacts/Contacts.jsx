@@ -3,21 +3,21 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col space-y-20">
+    <div className="flex flex-col space-y-10 md:space-y-20">
       {/* My Quotes */}
       <div className="mx-auto p-2">
         <div className="bg-gray-900 px-2 md:px-4 py-4 md:py-6 relative rounded-lg">
           <FaQuoteLeft className="absolute transform -left-2 md:-left-12 -top-4 md:-top-12 w-10 h-8 md:w-20 md:h-16 primaryText" />
           <FaQuoteRight className="absolute transform -right-2 md:-right-12 -bottom-4 md:-bottom-12 flip w-10 h-8 md:w-20 md:h-16 primaryText" />
-          <p className="text-gray-200 text-lg md:text-xl lg:text-2xl py-4 px-10 font-Hess">
+          <p className="text-gray-200 text-lg md:text-xl lg:text-2xl py-4 px-10 font-Hess overflow-hidden">
             Before software can be
-            <span className="primaryText"> reusable</span> it first has to be
-            usable.
+            <span className="primaryText font-extrabold"> reusable</span> it
+            first has to be usable.
           </p>
         </div>
       </div>
       {/* MiniMal Contact Details */}
-      <div className="flex p-4 md:p-10 mx-auto rotate-2">
+      <div className="flex p-4 md:p-10 mx-auto md:rotate-2 pt-10">
         <p className="text-xl font-extrabold subText uppercase font-AeroSans">
           connect with me
         </p>

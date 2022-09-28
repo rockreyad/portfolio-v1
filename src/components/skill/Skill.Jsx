@@ -8,7 +8,7 @@ const Skill = () => {
       <Stranger />
 
       <div className="space-y-4">
-        <h1 className="font-AeroSans subText text-white uppercase font-extrabold text-xl">
+        <h1 className="font-AeroSans subText text-white uppercase font-extrabold text-xl lg:text-2xl">
           Capability
         </h1>
 
@@ -17,7 +17,7 @@ const Skill = () => {
             skills.map((skill) => (
               <>
                 <div className="flex items-center text-white">
-                  {skill.icon}
+                  <span style={{ color: `${skill.color}` }}>{skill.icon}</span>
                   <h3 className="text-white font-Din px-2 py-2 ">
                     {skill.name}
                   </h3>

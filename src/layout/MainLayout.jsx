@@ -15,10 +15,10 @@ const MainLayout = () => {
         animate={{ y: -110 }}
         transition={{
           delay: 0.5,
-          y: { duration: 3 },
+          y: { duration: 1 },
           default: { ease: "linear" },
         }}
-        className="container p-4 mx-auto items-center grid"
+        className="container px-4 lg:px-16 mx-auto items-center grid"
       >
         <Intro />
         <Skill />
