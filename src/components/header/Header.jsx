@@ -6,19 +6,19 @@ import Typical from "react-typical";
 
 export const screens = [
   {
-    title: "Home",
+    title: "home",
     color: "#ff0055",
   },
   {
-    title: "Skills",
+    title: "skills",
     color: "#0099ff",
   },
   {
-    title: "Work",
+    title: "work",
     color: "#22cc88",
   },
   {
-    title: "Hire",
+    title: "hire",
     color: "#8353fc",
   },
 ];
@@ -66,9 +66,9 @@ const Header = () => {
           `sticky top-10 z-30 ${!isOpen ? "px-12" : ""} py-4  md:px-4`
         )}
       >
-        <div class="flex items-center justify-between mx-auto max-w-3xl bg-slate-800 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
+        <div class="flex items-center justify-between mx-auto max-w-3xl bg-[#ceba9c] dark:bg-slate-800 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
           <Typical
-            className="text-base font-Din font-extrabold text-gray-300"
+            className="text-base font-Din font-extrabold darkPrimaryColor dark:text-gray-300"
             steps={["Mahamud Hasan", 9000, "", 2000]}
             loop={Infinity}
             wrapper="span"
@@ -90,9 +90,11 @@ const Header = () => {
                     className={classNames(
                       `title ${
                         i === selected && "selected"
-                      } px-4 py-2 font-semibold text-gray-400 rounded text-xs`
+                      } px-4 py-2 font-semibold darkPrimaryColor dark:text-gray-400 rounded text-xs capitalize`
                     )}
-                    style={{ color: i === selected ? color : "#dedede" }}
+                    style={{
+                      color: i === selected ? color : "",
+                    }}
                     onClick={() => setSelected(i)}
                   >
                     {i === selected && (
@@ -102,7 +104,7 @@ const Header = () => {
                         style={{ backgroundColor: color }}
                       />
                     )}
-                    {title}
+                    <a href={`#${title}`}>{title}</a>
                   </motion.li>
                 ))}
               </ol>
@@ -178,7 +180,7 @@ const Header = () => {
             }}
             variants={linkVariants}
           >
-            about
+            skills
           </motion.a>
           <motion.a
             style={{
@@ -188,7 +190,7 @@ const Header = () => {
             }}
             variants={linkVariants}
           >
-            gallery
+            Work
           </motion.a>
         </motion.li>
       </header>

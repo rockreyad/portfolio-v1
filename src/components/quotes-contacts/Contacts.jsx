@@ -6,19 +6,21 @@ const Contact = () => {
     <div className="flex flex-col space-y-10 md:space-y-20">
       {/* My Quotes */}
       <div className="mx-auto p-2">
-        <div className="bg-gray-900 px-2 md:px-4 py-4 md:py-6 relative rounded-lg">
-          <FaQuoteLeft className="absolute transform -left-2 md:-left-12 -top-4 md:-top-12 w-10 h-8 md:w-20 md:h-16 primaryText" />
-          <FaQuoteRight className="absolute transform -right-2 md:-right-12 -bottom-4 md:-bottom-12 flip w-10 h-8 md:w-20 md:h-16 primaryText" />
-          <p className="text-gray-200 text-lg md:text-xl lg:text-2xl py-4 px-10 font-Hess overflow-hidden">
+        <div className="bg-[#c7c3b2a2] dark:bg-gray-900 px-2 md:px-4 py-4 md:py-6 relative rounded-lg">
+          <FaQuoteLeft className="absolute transform -left-2 md:-left-12 -top-4 md:-top-12 w-10 h-8 md:w-20 md:h-16 text-[#576F72] dark:text-[#3b59c6]" />
+          <FaQuoteRight className="absolute transform -right-2 md:-right-12 -bottom-4 md:-bottom-12 flip w-10 h-8 md:w-20 md:h-16 text-[#576F72] dark:text-[#3b59c6]" />
+          <p className="text-[#6c6c6c] dark:text-gray-200 text-lg md:text-xl lg:text-2xl py-4 px-10 font-Hess overflow-hidden">
             Before software can be
-            <span className="primaryText font-extrabold"> reusable</span> it
-            first has to be usable.
+            <span className="dark:text-[primaryText] font-extrabold mx-1">
+              reusable
+            </span>
+            it first has to be usable.
           </p>
         </div>
       </div>
       {/* MiniMal Contact Details */}
-      <div className="flex p-4 md:p-10 mx-auto md:rotate-2 pt-10">
-        <p className="text-xl font-extrabold subText uppercase font-AeroSans">
+      <div id="hire" className="flex p-4 md:p-10 mx-auto md:rotate-2 pt-10">
+        <p className="text-[#576F72] dark:text-[#CCD6A6]  text-xl font-extrabold uppercase font-AeroSans">
           connect with me
         </p>
       </div>
@@ -27,7 +29,7 @@ const Contact = () => {
         <div class="backdrop-blur-3xl grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 lg:gap-8 border border-gray-700 md:border-none rounded px-2 py-6 items-center">
           <div class="pb-6 md:pb-0 rounded-md flex items-center justify-start">
             <div className="flex flex-col justify-start items-start space-y-1">
-              <p className="text-xl font-extrabold text-gray-400">
+              <p className="text-xl font-extrabold text-[#576F72] dark:text-gray-400">
                 Mahamud Hasan
               </p>
               <p className="font-extrabold text-[11px] uppercase primaryText">
@@ -38,7 +40,7 @@ const Contact = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 zoomAndPan="magnify"
                 viewBox="0 0 150 74.999997"
-                className="stroke-white font-extrabold md:hidden text-[14px] uppercase primaryText italic w-1/4"
+                className="stroke-black dark:stroke-white font-extrabold md:hidden text-[14px] uppercase primaryText italic w-1/4"
                 preserveAspectRatio="xMidYMid meet"
                 version="1.0"
               >
@@ -85,19 +87,23 @@ const Contact = () => {
             <p className="text-sm font-bold uppercase mr-2 primaryText ">
               residence:
             </p>
-            <p className="font-bold text-sm text-gray-400">Dhaka, Bangladesh</p>
+            <p className="font-bold text-sm text-[#576F72] dark:text-gray-400">
+              Dhaka, Bangladesh
+            </p>
           </div>
           <div class=" rounded-md flex  md:flex-col  items-center justify-start">
             <p className="text-sm font-bold uppercase mr-2 primaryText">
               freelance:
             </p>
-            <p className="font-bold text-sm text-gray-400">Available</p>
+            <p className="font-bold text-sm text-[#576F72] dark:text-gray-400">
+              Available
+            </p>
           </div>
           <div class=" rounded-md flex  md:flex-col  items-center justify-start">
             <p className="text-sm font-bold uppercase mr-2 primaryText">
               e-mail:
             </p>
-            <p className="font-bold text-sm text-gray-400">
+            <p className="font-bold text-sm text-[#576F72] dark:text-gray-400">
               rockreyad@gmail.com
             </p>
           </div>

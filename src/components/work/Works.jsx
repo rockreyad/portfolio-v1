@@ -1,75 +1,70 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { CgDetailsMore, CgArrowLongRight } from "react-icons/cg";
+import { FiCodesandbox } from "react-icons/fi";
 
 import { projects } from "../../utils/data/projects";
 
 const Works = () => {
   return (
-    <div>
-      <div className="pb-40">
-        <h1 className="font-AeroSans subText text-white uppercase font-extrabold text-xl lg:text-2xl flex justify-start border-b border-b-gray-600 w-full p-2">
+    <>
+      <div id="work">
+        <h1 className="font-AeroSans text-[#576F72] dark:text-[#CCD6A6]  uppercase font-extrabold text-xl lg:text-2xl flex justify-start border-b border-b-gray-600 w-full p-2">
           featured projects
         </h1>
 
-        <div className="text-lg font-semibold capitalize space-y-20 md:space-y-32 lg:space-y-48 pt-10">
+        <div className="grid grid-cols-1 gap-8 md:gap-6 sm:grid-cols-1 md:grid-cols-2  xl:grid-cols-3 mt-8 pb-36">
           {projects &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <>
                 <motion.div
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 0.7, transition: { duration: 7 } }}
-                  whileHover={{ opacity: 1, scale: 1.1 }}
+                  animate={{
+                    opacity: 0.7,
+                    transition: { duration: 7 },
+                  }}
+                  whileHover={{ opacity: 1, scale: 1.0 }}
                   whileTap={{
                     opacity: 1,
                     scale: 0.9,
                     boxShadow: "0px 5px 8px #307",
                   }}
-                  className={`flex rounded-md text-white bg-contain bg-center
-                    md:h-[350px] lg:h-[450px] hover:shadow-md hover:drop-shadow-2xl hover:shadow-rose-600`}
-                  style={{
-                    backgroundImage: `url(${project.image})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    minHeight: "350px",
-                  }}
+                  className="h-fit rounded p-1 duration-500 hover:bg-gray-200 dark:hover:bg-gray-500 hover:p-2 hover:text-gray-500 text-gray-700 dark:text-gray-100 shadow-md hover:shadow-gray-400 shadow-[#ceba9c] dark:shadow-indigo-400"
                 >
-                  <div className="flex flex-col px-4 py-4 backdrop-blur-sm hover:backdrop-blur-none md:backdrop-blur-[3px] justify-between w-full">
-                    <div className="flex flex-col justify-start items-start">
-                      <h3 className="text-2xl font-Din font-semibold">
+                  <img
+                    src={project.image}
+                    className="h-36 md:h-60 w-full rounded object-cover hover:shadow-2xl"
+                    alt=""
+                  />
+                  <div className="flex flex-col px-2">
+                    <div className="flex items-center justify-between gap-4 pt-4 pb-2">
+                      <span className="truncate whitespace-pre font-bold">
                         {project.name}
-                      </h3>
-
-                      <div className="mt-10 space-y-2  text-gray-300">
-                        <div className="flex items-center space-x-2">
-                          <CgDetailsMore />
-                          <p className="font-MarkPro font-medium text-sm">
-                            Custom scroll bar & Cursor
-                          </p>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CgDetailsMore />
-                          <p className="font-MarkPro font-medium text-sm">
-                            Custom scroll bar & Cursor
-                          </p>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CgDetailsMore />
-                          <p className="font-MarkPro font-medium text-sm">
-                            Custom scroll bar & Cursor
-                          </p>
-                        </div>
-                      </div>
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <a
+                          href={project.url}
+                          rel="noreferrer"
+                          target={"_blank"}
+                        >
+                          <FiCodesandbox className="hover:text-rose-400" />
+                        </a>
+                      </span>
                     </div>
-                    <div className="space-y-2">
-                      <div
-                        className="text-white font-Din border-b-rose-500 border-b-2 flex w-1/3  justify-between items-center hover:shadow-md px-2"
-                        type=""
-                      >
-                        <p className="text-sm">
-                          <a href={project.url}>View Code</a>
-                        </p>
-                        <CgArrowLongRight />
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
+                        <label className="text-xs font-bold" for="">
+                          React
+                        </label>
+                      </div>
+                      <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
+                        <label className="text-xs font-bold" for="">
+                          nodeJs
+                        </label>
+                      </div>
+                      <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
+                        <label className="text-xs font-bold" for="">
+                          TailwindCss
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -78,7 +73,7 @@ const Works = () => {
             ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

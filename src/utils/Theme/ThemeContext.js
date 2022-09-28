@@ -27,7 +27,7 @@ export const ThemeProvider = ({ initialTheme, children }) => {
 
     root.classList.remove(isDark ? "light" : "dark");
     root.classList.add(rawTheme);
-
+    localStorage.removeItem('theme')
     localStorage.setItem("color-theme", rawTheme);
   };
 
