@@ -4,11 +4,10 @@ import Stranger from "./Stranger";
 
 const Skill = () => {
   return (
-    <div className="space-y-36 pb-40" id="skills">
+    <div className="space-y-36" id="skill">
       <Stranger />
-
-      <div className="space-y-4">
-        <h1 className="font-AeroSans text-[#576F72] dark:text-[#CCD6A6]  uppercase font-extrabold text-xl lg:text-2xl">
+      <div className="space-y-5 md:space-y-10">
+        <h1 className="font-AeroSans text-[#576F72] dark:text-[#CCD6A6]  uppercase font-extrabold text-xl lg:text-2xl flex justify-center items-center">
           Capability
         </h1>
 

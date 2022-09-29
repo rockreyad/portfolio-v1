@@ -1,11 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Intro from "../components/intro/Intro";
-import Skill from "../components/skill/Skill";
+import Skill from "../components/skill-com/Skill";
 import Works from "../components/work/Works";
 import Contact from "../components/quotes-contacts/Contacts";
-import { motion } from "framer-motion";
 
 const MainLayout = () => {
   return (
@@ -21,9 +21,12 @@ const MainLayout = () => {
         className="container px-4 lg:px-16 mx-auto items-center grid"
       >
         <Intro />
-        <Skill />
-        <Works />
-        <Contact />
+
+        <div className="space-y-40">
+          <Skill />
+          <Works />
+          <Contact />
+        </div>
       </motion.div>
       <Footer />
     </motion.div>

@@ -12,17 +12,20 @@ const Works = () => {
           featured projects
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 md:gap-6 sm:grid-cols-1 md:grid-cols-2  xl:grid-cols-3 mt-8 pb-36">
+        <div className="grid grid-cols-1 gap-8 md:gap-6 sm:grid-cols-1 md:grid-cols-2  xl:grid-cols-3 mt-8">
           {projects &&
             projects.map((project, index) => (
               <>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{
-                    opacity: 0.7,
-                    transition: { duration: 7 },
+                    opacity: 0.8,
+                    transition: { duration: 5 },
                   }}
-                  whileHover={{ opacity: 1, scale: 1.0 }}
+                  whileHover={{
+                    opacity: 1,
+                    scale: 1.1,
+                  }}
                   whileTap={{
                     opacity: 1,
                     scale: 0.9,
@@ -32,7 +35,7 @@ const Works = () => {
                 >
                   <img
                     src={project.image}
-                    className="h-36 md:h-60 w-full rounded object-cover hover:shadow-2xl"
+                    className="h-36 md:h-60 xl:h-80 w-full rounded object-cover hover:shadow-2xl"
                     alt=""
                   />
                   <div className="flex flex-col px-2">
