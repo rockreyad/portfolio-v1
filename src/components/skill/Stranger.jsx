@@ -10,7 +10,7 @@ const Stranger = () => {
     <div className="py-10">
       <div className="grid sm grid-cols-1 grid-rows-2 gap-10  md:grid-cols-2 md:grid-rows-1">
         {/* All Social Media */}
-        <div class="row-span-1 w-full">
+        <div className="row-span-1 w-full">
           <div className="flex flex-col items-center justify-center text-gray-300 space-y-4 w-fit">
             <div className="">
               <h1 className="text-[#576F72] dark:text-white uppercase md:text-[0.55rem] text-sm font-semibold font-Din tracking-[.2rem] ">
@@ -69,7 +69,7 @@ const Stranger = () => {
             </div>
           </div>
         </div>
-        <div class="row-span-1 w-full">
+        <div className="row-span-1 w-full">
           <div className="text-gray-300 ">
             <div className="flex flex-col items-start md:items-end justify-start md:justify-end text-gray-300 space-y-4">
               <h1 className="text-[#576F72] dark:text-white uppercase md:text-[0.55rem] text-sm font-semibold font-Din tracking-[.2rem]">

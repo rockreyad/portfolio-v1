@@ -52,17 +52,17 @@ const Works = () => {
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
-                        <label className="text-xs font-bold" for="">
+                        <label className="text-xs font-bold" htmlFor="">
                           React
                         </label>
                       </div>
                       <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
-                        <label className="text-xs font-bold" for="">
+                        <label className="text-xs font-bold" htmlFor="">
                           nodeJs
                         </label>
                       </div>
                       <div className="flex items-center gap-2 rounded bg-gray-200 dark:bg-gray-500 p-0.5">
-                        <label className="text-xs font-bold" for="">
+                        <label className="text-xs font-bold" htmlFor="">
                           TailwindCss
                         </label>
                       </div>
