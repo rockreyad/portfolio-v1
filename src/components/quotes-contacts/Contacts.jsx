@@ -25,9 +25,9 @@ const Contact = () => {
         </p>
       </div>
 
-      <div class="px-2 pb-10 font-MarkPro">
-        <div class="backdrop-blur-3xl grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 lg:gap-8 border border-gray-700 md:border-none rounded px-2 py-6 items-center">
-          <div class="pb-6 md:pb-0 rounded-md flex items-center justify-start">
+      <div className="px-2 pb-10 font-MarkPro">
+        <div className="backdrop-blur-3xl grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 lg:gap-8 border border-gray-700 md:border-none rounded px-2 py-6 items-center">
+          <div className="pb-6 md:pb-0 rounded-md flex items-center justify-start">
             <div className="flex flex-col justify-start items-start space-y-1">
               <p className="text-xl font-extrabold text-[#576F72] dark:text-gray-400">
                 Mahamud Hasan
@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div class="rounded-md flex md:flex-col items-center justify-start">
+          <div className="rounded-md flex md:flex-col items-center justify-start">
             <p className="text-sm font-bold uppercase mr-2 primaryText ">
               residence:
             </p>
@@ -91,7 +91,7 @@ const Contact = () => {
               Dhaka, Bangladesh
             </p>
           </div>
-          <div class=" rounded-md flex  md:flex-col  items-center justify-start">
+          <div className=" rounded-md flex  md:flex-col  items-center justify-start">
             <p className="text-sm font-bold uppercase mr-2 primaryText">
               freelance:
             </p>
@@ -99,7 +99,7 @@ const Contact = () => {
               Available
             </p>
           </div>
-          <div class=" rounded-md flex  md:flex-col  items-center justify-start">
+          <div className=" rounded-md flex  md:flex-col  items-center justify-start">
             <p className="text-sm font-bold uppercase mr-2 primaryText">
               e-mail:
             </p>
