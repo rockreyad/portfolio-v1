@@ -25,7 +25,7 @@ const Stranger = () => {
               >
                 <div className="flex justify-start items-center space-x-0.5">
                   <FiGitlab className="text-purple-600  text-sm " />
-                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#635666] dark:hover:text-white text-[#576F72] dark:text-gray-200  ">
+                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#10587a] dark:hover:text-white text-[#576F72] dark:text-gray-300  ">
                     Gh
                   </p>
                 </div>
@@ -37,7 +37,7 @@ const Stranger = () => {
               >
                 <div className="flex justify-start items-center space-x-0.5">
                   <CgTwitter className="text-sky-600  text-sm" />
-                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#635666] dark:hover:text-white text-[#576F72] dark:text-gray-200  ">
+                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#10587a] dark:hover:text-white text-[#576F72] dark:text-gray-300  ">
                     tw
                   </p>
                 </div>
@@ -49,7 +49,7 @@ const Stranger = () => {
               >
                 <div className="flex justify-start items-center space-x-0.5">
                   <ImLinkedin2 className="text-blue-600  text-sm" />
-                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#635666] dark:hover:text-white text-[#576F72] dark:text-gray-200  ">
+                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#10587a] dark:hover:text-white text-[#576F72] dark:text-gray-300  ">
                     ld
                   </p>
                 </div>
@@ -61,7 +61,7 @@ const Stranger = () => {
               >
                 <div className="flex justify-start items-center space-x-0.5">
                   <AiOutlineInstagram className="text-rose-600  text-sm" />
-                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#635666] dark:hover:text-white text-[#576F72] dark:text-gray-200  ">
+                  <p className="font-semibold uppercase text-base md:text-sm tracking-[-.05rem] hover:text-[#10587a] dark:hover:text-white text-[#576F72] dark:text-gray-300  ">
                     in
                   </p>
                 </div>

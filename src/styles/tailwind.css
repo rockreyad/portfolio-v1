@@ -68,3 +68,8 @@ code {
   position: absolute;
   bottom: -4px;
 }
+
+.text-2xs {
+  font-size: 0.6rem /* 12px */;
+  line-height: 0.9rem /* 16px */;
+}
