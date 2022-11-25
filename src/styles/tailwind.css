@@ -4,20 +4,20 @@
 
 @font-face {
   font-family: "AeroSans";
-  src: url("../src/assests/fonts/AeroSans.ttf");
+  src: url("../assests/fonts/AeroSans.ttf");
 }
 
 @font-face {
   font-family: "Hess";
-  src: url("../src/assests/fonts/Hess-Gothic-Round-NF-W01-Bold.ttf");
+  src: url("../assests/fonts/Hess-Gothic-Round-NF-W01-Bold.ttf");
 }
 @font-face {
   font-family: "Mark-Pro";
-  src: url("../src/assests/fonts/Mark-Pro.ttf");
+  src: url("../assests/fonts/Mark-Pro.ttf");
 }
 @font-face {
   font-family: "Din";
-  src: url("../src/assests/fonts/D-DIN.otf");
+  src: url("../assests/fonts/D-DIN.otf");
 }
 
 body {
@@ -67,4 +67,9 @@ code {
   background: black;
   position: absolute;
   bottom: -4px;
+}
+
+.text-2xs {
+  font-size: 0.6rem /* 12px */;
+  line-height: 0.9rem /* 16px */;
 }

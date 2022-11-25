@@ -25,7 +25,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div class="px-2 pb-10 font-MarkPro">
+      <div class="px-2 font-MarkPro">
         <div class="backdrop-blur-3xl grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 lg:gap-8 border border-gray-700 md:border-none rounded px-2 py-6 items-center">
           <div class="pb-6 md:pb-0 rounded-md flex items-center justify-start">
             <div className="flex flex-col justify-start items-start space-y-1">
