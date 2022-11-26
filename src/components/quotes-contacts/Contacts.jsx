@@ -104,7 +104,7 @@ const Contact = () => {
               e-mail:
             </p>
             <p className="font-bold text-sm text-[#576F72] dark:text-gray-400">
-              rockreyad@gmail.com
+              hasan@narc.dev
             </p>
           </div>
         </div>
