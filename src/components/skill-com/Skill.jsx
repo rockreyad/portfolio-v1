@@ -10,7 +10,7 @@ const Skill = () => {
           Capability
         </h1>
 
-        <div className="md:flex md:justify-between md:items-start md:grid-cols-3 space-y-16 md:space-y-0 md:space-x-14  px-2">
+        <div className="md:flex md:justify-between md:items-start space-y-16 md:space-y-0 md:space-x-14  px-2">
           <div className="space-y-2">
             <h1 className="text-base text-gray-600 font-semibold font-AeroSans  text-center">
               Front-end
@@ -18,7 +18,7 @@ const Skill = () => {
             <div className="grid grid-cols-3  justify-items-center gap-2 text-lg font-semibold capitalize">
               {skills &&
                 skills
-                  .filter((x) => x.skills == 1)
+                  .filter((x) => x.skills === 1)
                   .map((skill) => (
                     <>
                       <div className="md:px-6">
@@ -49,10 +49,10 @@ const Skill = () => {
             <div className="grid grid-cols-3  justify-items-center gap-2 text-lg font-semibold capitalize">
               {skills &&
                 skills
-                  .filter((x) => x.skills == 2)
+                  .filter((x) => x.skills === 2)
                   .map((skill) => (
                     <>
-                      <div className="md:px-3">
+                      <div className="md:px-6">
                         <div className="grid gap-1 justify-items-center">
                           <span
                             style={{ color: `${skill.color}` }}
@@ -80,10 +80,10 @@ const Skill = () => {
             <div className="grid grid-cols-3  justify-items-center gap-2 text-lg font-semibold capitalize">
               {skills &&
                 skills
-                  .filter((x) => x.skills == 3)
+                  .filter((x) => x.skills === 3)
                   .map((skill) => (
                     <>
-                      <div className="md:px-3">
+                      <div className="md:px-6">
                         <div className="grid gap-1 justify-items-center">
                           <span
                             style={{ color: `${skill.color}` }}
@@ -113,25 +113,25 @@ const Skill = () => {
 export default Skill;
 
 function level(level) {
-  if (level == 1) {
+  if (level === 1) {
     return (
       <h2 className="text-2xs md:text-xs text-gray-400 dark:text-gray-600">
         Beginner
       </h2>
     );
-  } else if (level == 2) {
+  } else if (level === 2) {
     return (
       <h2 className="text-2xs md:text-xs text-gray-400 dark:text-gray-600">
         Intermediate
       </h2>
     );
-  } else if (level == 3) {
+  } else if (level === 3) {
     return (
       <h2 className="text-2xs md:text-xs text-gray-400 dark:text-gray-600">
         Advanced
       </h2>
     );
-  } else if (level == 4) {
+  } else if (level === 4) {
     return (
       <h2 className="text-2xs md:text-xs text-gray-400 dark:text-gray-600">
         Expert

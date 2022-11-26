@@ -76,7 +76,7 @@ const Stranger = () => {
                 have an idea?
               </h1>
               <h3 className="text-[#576F72] dark:text-white text-3xl md:text-sm font-[900] font-MarkPro hover:text-rose-500 dark:hover:text-rose-500">
-                <a href="mailto:rockreyad@gmail.com">Tell me about it</a>
+                <a href="mailto:hasan@narc.dev">Tell me about it</a>
               </h3>
             </div>
           </div>
