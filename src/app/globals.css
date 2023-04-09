@@ -2,26 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "AeroSans";
+  src: url("/fonts/AeroSans.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Hess";
+  src: url("/fonts/Hess-Gothic-Round-NF-W01-Bold.ttf");
+}
+@font-face {
+  font-family: "Mark-Pro";
+  src: url("/fonts/Mark-Pro.ttf");
+}
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/D-DIN.otf");
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.primaryText {
+  color: #fbb279;
+  background-image: -webkit-linear-gradient(0deg, #fbb279 0%, #27f2bc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.subText {
+  color: #e39ef1;
+  background-image: -webkit-linear-gradient(0deg, #e39ef1 0%, #b4ff24 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.title.selected {
+  font-size: 16px;
+}
+.underline {
+  width: 50%;
+  height: 5px;
+  border-radius: 4px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+}
+
+.text-2xs {
+  font-size: 0.6rem /* 12px */;
+  line-height: 0.9rem /* 16px */;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+}
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.skill-progress {
+  position: relative;
+  width: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.skill-name-container {
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  width: 4rem;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
 }
